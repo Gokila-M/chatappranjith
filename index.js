@@ -31,7 +31,7 @@ app.use(express.static("public"));
 
 mongoose.set("strictQuery", false);
 mongoose
-  .connect("mongodb://127.0.0.1:27017/masssmedia")
+  .connect("mongodb+srv://goki1a:1305m%40l%40i@chatapp.qz7m3.mongodb.net/mydatabase?retryWrites=true&w=majority")
   .then(() => console.log("You! Connected to MongoDB..."))
   .catch((err) =>
     console.error("Could not connect to MongoDB... " + err.message)
